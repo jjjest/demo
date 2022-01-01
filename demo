@@ -5,7 +5,7 @@ import scipy.fftpack as fftpk
 import numpy as np
 from matplotlib import pyplot as plt
 
-s_rate, signal = wavfile.read("D:\jest\MSU\BSECE 3RD YEAR\ECE120-E16-3 Digital Signal Processing\demo for narrative report\demo-1\Everyday-holiday-899467.wav") 
+s_rate, signal = wavfile.read("C:\Users\franc\Documents\GitHub\demo-1\Everyday-holiday-899467.wav") 
 
 FFT = abs(scipy.fft.fft(signal))
 freqs = fftpk.fftfreq(len(FFT), (1.0/s_rate))
